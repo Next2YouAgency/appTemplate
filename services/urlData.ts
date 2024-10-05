@@ -1,0 +1,1 @@
+export const urlApi = 'https://8034-201-69-120-109.ngrok-free.app/api';
