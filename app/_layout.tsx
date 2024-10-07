@@ -69,9 +69,10 @@ export default function RootLayout (){
       initialRouteName='index'
     >
       <Stack.Screen name="index" options={{ title: "Login", headerShown: false }}/>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
       <Stack.Screen name="profile" options={{ title: "Perfil" }}/>
       <Stack.Screen name="user/[id]" options={{ title: "Usuário" }}/>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
+      {/* <Stack.Screen name="(tabs)/dashboard/mercados" options={{ title: "Mercados" }}/> */}
       
     </Stack>
   );

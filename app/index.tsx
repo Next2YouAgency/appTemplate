@@ -22,7 +22,11 @@ export default function Login() {
       if (existe) {
         //Usuário encontrado no banco local, navegar para tela home
         console.log(`Usuário ${username} encontrado no banco local.`);
-        router.replace('(Tabs)/dashboard');
+        const rotaRedirecionar = "(tabs)/dashboard";
+
+        // console.log(rotaRedirecionar);
+        
+        router.replace(rotaRedirecionar.toLowerCase());
       } else {
         //usuário não encontrado no banco local, buscar no banco em produção
         console.log(`Usuário ${username} não encontrado localmente, tentando em produção.`);
@@ -93,7 +97,12 @@ export default function Login() {
 
         salvarUsuarios(usuarioComAmbiente);
 
-        router.replace('(tabs)/dashboard/index');
+        const rotaRedirecionar = "(tabs)/dashboard";
+
+        console.log(rotaRedirecionar);
+        
+
+        router.replace(rotaRedirecionar.toLowerCase());
 
       } else { alert(`Erro ao tentar efetuar login, credenciais Inválidas. Tente novamente.`); }
 

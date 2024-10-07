@@ -36,6 +36,36 @@ export default function Layout() {
       />
 
       <Tabs.Screen
+        name="mercados"
+        options={{
+          headerShown: false,
+          title: "Mercados",
+          tabBarIcon: ({ focused, color, size }) => {
+            if (focused) {
+              return <FontAwesome name="cart-plus" color={color} size={size} />
+            }
+
+            return <FontAwesome name="cart-arrow-down" color={color} size={size} />
+          }
+        }}
+      />
+
+      <Tabs.Screen
+        name="produtos"
+        options={{
+          headerShown: false,
+          title: "Produtos",
+          tabBarIcon: ({ focused, color, size }) => {
+            if (focused) {
+              return <FontAwesome name="product-hunt" color={color} size={size} />
+            }
+
+            return <FontAwesome name="product-hunt" color={color} size={size} />
+          }
+        }}
+      />
+
+      <Tabs.Screen
         name='settings'
         options={{
           headerShown: false,
